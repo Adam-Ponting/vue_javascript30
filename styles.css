@@ -1,0 +1,67 @@
+/* RESETS */
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+/* START OF STYLES */
+#app {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    padding: 0 2em;
+
+    background-color: rgb(152, 218, 226);
+    background-image: url(https://source.unsplash.com/random/800×800);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.key-wrapper {
+    flex: 1;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: .5em;
+    padding: 2em .5em;
+
+
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border: .1em solid yellow;
+    border-radius: .1em;
+    box-shadow: 0px 0px 10px black;
+
+    transition: transform .1s ease-out;
+}
+.keyboard-input {
+    color: hsla(56, 100%, 50%, 1);
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+}
+.drum-description {
+    color: hsla(56, 90%, 50%, 0.9);
+
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-size: .8em;
+}
+.playing{
+    transform: scale(1.2);
+
+    background-color: hsla(0, 0%, 0%, .8);
+    box-shadow: 0px 0px 10px yellow;
+}

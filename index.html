@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+    <div id="app">
+        <button v-for="(keyboard, index) in keys" :key="index" :ref=`${index}` class="key-wrapper"
+            @click="touchPlay(index)">
+            <p class="keyboard-input">{{keyboard}}</p>
+            <p class="drum-description">{{drums[index]}}</p>
+        </button>
+
+        <audio src="sounds/boom.wav" ref="boom"></audio>
+        <audio src="sounds/clap.wav" ref="clap"></audio>
+        <audio src="sounds/hihat.wav" ref="hihat"></audio>
+        <audio src="sounds/kick.wav" ref="kick"></audio>
+        <audio src="sounds/openhat.wav" ref="openhat"></audio>
+        <audio src="sounds/ride.wav" ref="ride"></audio>
+        <audio src="sounds/snare.wav" ref="snare"></audio>
+        <audio src="sounds/tink.wav" ref="tink"></audio>
+        <audio src="sounds/tom.wav" ref="tom"></audio>
+    </div>
+    <script src=index.js></script>
+
+</body>
+
+</html>
